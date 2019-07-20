@@ -10,4 +10,6 @@ Les données seront stockées dans un fichier de type XML.
 
 ![Edit](https://github.com/Poussaoui/Java-Serveur-HTTP-Generateur-HTML/blob/master/Screenshots/Edit.JPG)
 
-    Technologies utilisées : Java, ServerSocket, ,XML, SAX, DOM, JaCoCo Java Code Coverage Library, bootstrap, jQuery, Junit.
+Technologies utilisées : 
+
+    Java, ServerSocket, ,XML, SAX, DOM, JaCoCo Java Code Coverage Library, bootstrap, jQuery, Junit.
