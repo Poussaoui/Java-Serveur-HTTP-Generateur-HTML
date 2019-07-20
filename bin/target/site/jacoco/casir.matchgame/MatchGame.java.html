@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatchGame.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">matchgame</a> &gt; <a href="index.source.html" class="el_package">casir.matchgame</a> &gt; <span class="el_source">MatchGame.java</span></div><h1>MatchGame.java</h1><pre class="source lang-java linenums">package casir.matchgame;
+
+import java.lang.Exception;
+import java.util.Scanner;
+import java.util.Random;
+
+<span class="nc" id="L7">public class MatchGame {</span>
+
+    public static void main(String[] args){
+<span class="nc" id="L10">        int remaining = 10;</span>
+        while (true) {
+<span class="nc" id="L12">            Scanner reader = new Scanner(System.in);</span>
+<span class="nc" id="L13">            System.out.println(&quot;Enter a number between 1 and 3: &quot;);</span>
+<span class="nc" id="L14">            int n = reader.nextInt();</span>
+<span class="nc" id="L15">            remaining -= n;</span>
+<span class="nc bnc" id="L16" title="All 2 branches missed.">            if (remaining == 1){</span>
+<span class="nc" id="L17">                System.out.println(&quot;You Win&quot;);</span>
+<span class="nc" id="L18">                break;</span>
+            }
+<span class="nc" id="L20">            System.out.println(&quot;Remaining &quot; + remaining);</span>
+<span class="nc" id="L21">            n = new Random().nextInt(2) + 1;</span>
+<span class="nc" id="L22">            remaining -= n;</span>
+<span class="nc bnc" id="L23" title="All 2 branches missed.">            if (remaining == 1){</span>
+<span class="nc" id="L24">                System.out.println(&quot;You Loose&quot;);</span>
+<span class="nc" id="L25">                break;</span>
+            }
+<span class="nc" id="L27">            System.out.println(&quot;Remaining &quot; + remaining);</span>
+<span class="nc" id="L28">        }</span>
+<span class="nc" id="L29">    }</span>
+
+    public static int add(int a, int b) throws Exception {
+<span class="fc" id="L32">        int c = a + b;</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        if (c == 0){</span>
+<span class="fc" id="L34">            throw new Exception(&quot;c is zeroooo !&quot;);</span>
+        }
+<span class="fc" id="L36">        return c;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

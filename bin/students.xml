@@ -1,0 +1,17 @@
+<students>
+    <student id="001">
+        <firstName>Lokesh</firstName>
+        <lastName>Gupta</lastName>
+        <mail>Lokesh.Gupta@gmail.com</mail>
+    </student>
+    <student id="002">
+        <firstName>Alex</firstName>
+        <lastName>Gussin</lastName>
+        <mail>Alex.Gussin@gmail.com</mail>
+    </student>
+    <student id="003">
+        <firstName>David</firstName>
+        <lastName>Feezor</lastName>
+        <mail>David.Feezor@gmail.com</mail>
+    </student>
+</students>

@@ -1,0 +1,11 @@
+<settings>
+	<proxies>
+		<proxy>
+			<id>iut-proxy</id>
+			<active>true</active>
+			<protocol>http</protocol>
+			<host>172.30.1.1</host>
+			<port>3128</port>
+		</proxy>
+	</proxies>
+</settings>
